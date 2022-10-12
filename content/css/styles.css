@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1% 0 2%;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background: white;
+}
+
+header div:nth-child(2){
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header div p{
+    display: inline-block;
+    margin: 0 4%;
+}
+
+.header-opciones{
+    background-image: url("https://cdn-icons-png.flaticon.com/512/54/54878.png");
+    width: 25px;
+    height: 30px;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section{
+    display: flex;
+    margin-top: 8vh;
+}
+
+aside{
+    background-color: #f2f2f2;
+    width: 23vw;
+    padding: 3% 2%;
+    height: 92vh;
+    position: fixed;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul li{
+    display: block;
+    height: 3rem;
+}
+
+main{
+    width: 77vw;
+    padding: 15px;
+    margin-left: 23vw;
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+
+.caja{
+    width: 220px;
+    height: 270px;
+    transition: box-shadow 1s;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.226);
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+
+.caja:hover{
+    transition: box-shadow 0.5s;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.549);
+}
